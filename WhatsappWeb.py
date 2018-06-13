@@ -9,7 +9,7 @@ driver = None
 def wait(SleepTime = 3):
 	time.sleep(SleepTime)
 
-## load web driver for selenium : chrome
+
 def web_driver_load():
 	global driver
 	driver = webdriver.Chrome("/home/hybrid/sleepyPanda/Whatsapp_bomb/chromedriver") #Enter your path here
@@ -18,7 +18,7 @@ def web_driver_quit():
 	driver.quit()
 	quit()
 
-## actual login in hockey app site
+
 def whatsapp_login():
 	driver.get('https://web.whatsapp.com/')
 	wait(20)
