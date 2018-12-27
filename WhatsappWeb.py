@@ -1,3 +1,4 @@
+#use python 2.7
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -12,7 +13,7 @@ def wait(SleepTime = 3):
 
 def web_driver_load():
 	global driver
-	driver = webdriver.Chrome("/home/hybrid/sleepyPanda/Whatsapp_bomb/chromedriver") #Enter your path here
+	driver = webdriver.Chrome(raw_input("Enter you chrome driver path:")) #Enter your path here
 
 def web_driver_quit():
 	driver.quit()
