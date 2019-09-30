@@ -13,7 +13,7 @@ def wait(SleepTime = 3):
 
 def web_driver_load():
 	global driver
-	driver = webdriver.Chrome(raw_input("Enter you chrome driver path:")) #Enter your path here
+	driver = webdriver.Chrome(raw_input("Enter you chrome driver path:") + "/chromedriver") #Enter your path here
 
 def web_driver_quit():
 	driver.quit()
