@@ -19,6 +19,7 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 ##### Here are the steps you will need to follow
 
+ - Open https://web.whatsapp.com/ on a browser
  - Open up the dev console (generally F12 key)
  - Paste the following code
 
