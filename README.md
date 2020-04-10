@@ -24,11 +24,11 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads
  - Paste the following code
 
  ```
- for(iterator = 0; iterator <= 10; iterator++) {
- 	document.querySelector("#main > footer > div._2i7Ej._14Mgc.copyable-area > div._13mgZ > div > div._3u328.copyable-text.selectable-text").innerHTML = "Testing my JS code";
- 	document.querySelector("#main > footer > div._2i7Ej._14Mgc.copyable-area > div._13mgZ > div > div._3u328.copyable-text.selectable-text").dispatchEvent(new InputEvent('input', { bubbles: true}));
- 	document.querySelector("#main > footer > div._2i7Ej._14Mgc.copyable-area > div:nth-child(3) > button").click();
- }
+for (iterator = 0; iterator <= 100; iterator++) {
+ document.querySelector("#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text").innerHTML = "new code";
+ document.querySelector("#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text").dispatchEvent(new InputEvent('input', {bubbles: true}));
+ document.querySelector("#main > footer > div._3pkkz.V42si.copyable-area > div:nth-child(3) > button").click();
+}
 ```
 
 #### Detailed explaination comming soon
