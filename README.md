@@ -32,9 +32,9 @@ console.log(i)
 textArea.innerText = text;
 textArea.dispatchEvent(new InputEvent('input', {bubbles: true}))
 
-document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div._3HQNh._1Ae7k > button").click();
-
+document.querySelector('._4sWnG').click();
 })
+
 ```
 #### Updated 17th June 2021
 
