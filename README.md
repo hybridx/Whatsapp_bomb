@@ -24,21 +24,17 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads
  - Paste the following code
 
  ```
+var textArea = $x("//div[@contenteditable='true']")[1];
 var text = 'Hello Deepesh';
-var textMessageAreaEl = document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div.p3_M1 > div > div._13NKt.copyable-text.selectable-text");
 
+new Array(10).fill(0).forEach(() => {
+console.log(i)
+textArea.innerText = text;
+textArea.dispatchEvent(new InputEvent('input', {bubbles: true}))
 
-for (iterator = 0; iterator <= 10; iterator++) {
-console.log(iterator)
+document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div._3HQNh._1Ae7k > button").click();
 
- textMessageAreaEl.innerHTML = text;
-textMessageAreaEl.dispatchEvent(new InputEvent('input', {bubbles: true}))
-
-document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div._3HQNh._1Ae7k > button").click()
-
-}
-
-
+})
 ```
 #### Updated 17th June 2021
 
