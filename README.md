@@ -24,9 +24,12 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads
  - Paste the following code
 
  ```
+var text = 'Hello World';
+var textMessageAreaEl = document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div.p3_M1 > div > div._13NKt.copyable-text.selectable-text");
+
 for (iterator = 0; iterator <= 10; iterator++) {
-document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div.p3_M1 > div > div._13NKt.copyable-text.selectable-text").innerHTML = "new code";
-document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div.p3_M1 > div > div._13NKt.copyable-text.selectable-text").dispatchEvent(new InputEvent('input', {bubbles: true}));
+textMessageAreaEl.innerHTML = text;
+textMessageAreaEl.dispatchEvent(new InputEvent('input', {bubbles: true}));
 document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div._3HQNh._1Ae7k > button").click();
 }
 
