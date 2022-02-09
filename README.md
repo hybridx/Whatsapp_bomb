@@ -28,7 +28,6 @@ var textArea = $x("//div[@contenteditable='true']")[1];
 var text = 'Hello Deepesh';
 
 new Array(10).fill(0).forEach(() => {
-console.log(i)
 textArea.innerText = text;
 textArea.dispatchEvent(new InputEvent('input', {bubbles: true}))
 
