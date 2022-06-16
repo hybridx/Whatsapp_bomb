@@ -31,7 +31,7 @@ new Array(10).fill(0).forEach(() => {
 textArea.innerText = text;
 textArea.dispatchEvent(new InputEvent('input', {bubbles: true}))
 
-document.querySelector('._4sWnG').click();
+document.querySelector("#main > footer > div._2BU3P.tm2tP.copyable-area > div > span:nth-child(2) > div > div._2lMWa > div._3HQNh._1Ae7k > button").click()
 })
 
 ```
