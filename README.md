@@ -25,14 +25,13 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads
 
  ```
 var textArea = $x("//div[@contenteditable='true']")[1];
-var text = 'Hello Deepesh';
+var text = 'Test';
 
-new Array(10).fill(0).forEach(() => {
+new Array(50).fill(0).forEach(() => {
 textArea.innerText = text;
 textArea.dispatchEvent(new InputEvent('input', {bubbles: true}))
-
 document.querySelector("#main > footer > div._2lSWV._3cjY2.copyable-area > div > span:nth-child(2) > div > div._1VZX7 > div._2xy_p._3XKXx > button").click()
-
+})
 ```
 #### Updated 17th June 2021
 
