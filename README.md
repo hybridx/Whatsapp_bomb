@@ -30,7 +30,7 @@ var text = 'Test';
 new Array(50).fill(0).forEach(() => {
 textArea.innerText = text;
 textArea.dispatchEvent(new InputEvent('input', {bubbles: true}))
-document.querySelector("#main > footer > div._2lSWV._3cjY2.copyable-area > div > span:nth-child(2) > div > div._1VZX7 > div._2xy_p._3XKXx > button").click()
+document.querySelector("#main > footer > div._ak1k._ahmw.copyable-area > div > span:nth-child(2) > div > div._ak1r > div._ak1t._ak1u > button").click()
 })
 ```
 #### Updated 17th June 2021
