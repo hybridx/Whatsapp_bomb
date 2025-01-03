@@ -30,7 +30,7 @@ var text = 'Test';
 new Array(50).fill(0).forEach(() => {
 textArea.innerText = text;
 textArea.dispatchEvent(new InputEvent('input', {bubbles: true}))
-document.querySelector("#main > footer > div._ak1k._ahmw.copyable-area > div > span:nth-child(2) > div > div._ak1r > div._ak1t._ak1u > button").click()
+document.querySelector("#main > footer > div.x1n2onr6.xhtitgo.x9f619.x78zum5.x1q0g3np.xuk3077.x193iq5w.x122xwht.x1bmpntp.xs9asl8.x1swvt13.x1pi30zi.xnpuxes.copyable-area > div > span > div > div._ak1r > div.x123j3cw.xs9asl8.x9f619.x78zum5.x6s0dn4.xl56j7k.x1ofbdpd.x100vrsf.x1fns5xo > button").click()
 })
 ```
 #### Updated 17th June 2021
